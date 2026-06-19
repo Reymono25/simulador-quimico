@@ -1,0 +1,18 @@
+[build]
+  publish = "public"
+  command = ""
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/app.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/questions.js"
+  [headers.values]
+    Cache-Control = "no-cache"
